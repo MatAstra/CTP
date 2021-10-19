@@ -1,0 +1,41 @@
+>>> import keyword
+>>> print("Python keywords: ", keyword.kwlist)
+Python keywords:  ['False', 'None', 'True', '__peg_parser__', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+>>> a=1
+>>> d=2
+>>> c=3
+>>> e=4
+>>> id(a)
+2870259706160
+>>> id(d)
+2870259706192
+>>> id(c)
+2870259706224
+>>> id(e)
+2870259706256
+>>> c=e
+>>> id(c)
+2870259706256
+>>> id(e)
+2870259706256
+
+>>> a=1
+>>> b="Hello"
+>>> c=(1,2)
+>>> type(a)
+<class 'int'>
+>>> type(b)
+<class 'str'>
+>>> type(c)
+<class 'tuple'>
+
+>>> a=[1,2,7,4,5,6,3]
+>>> id(a)
+2870262450880
+>>> a[2]=3
+>>> a[6]=7
+>>> a
+[1, 2, 3, 4, 5, 6, 7]
+>>> id(a)
+2870262450880
